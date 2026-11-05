@@ -55,6 +55,14 @@ Copy `init` and busybox into the tree, make them executable, then:
 - Syscalls: `write`, `mount`, `execve` — and why `execve` *replaces* your program
 - Reading kernel panics like error messages, not like disasters
 
+## Download a prebuilt image
+
+Grab `bzImage` and `initramfs.cpio.gz` from the
+[Releases page](https://github.com/DevilHD1/Pax-OS/releases), then:
+
+    qemu-system-x86_64 -kernel bzImage -initrd initramfs.cpio.gz \
+      -append "console=ttyS0" -nographic
+
 ## Roadmap
 
 - [x] Compile and boot my own kernel
