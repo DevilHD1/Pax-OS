@@ -4,7 +4,7 @@ A Linux-based operating system I built and booted myself: a kernel compiled
 from source, a hand-written PID-1 init program in C, and a minimal root
 filesystem — running in QEMU.
 
-Built by Devilition(Peter), age 15. First boot: 5 November 2026.
+Built by Devilition, age 15. First boot: 5 November 2026.
 
 ## What this actually is
 
@@ -70,6 +70,6 @@ Copy `init` and busybox into the tree, make them executable, then:
 
 - [x] Compile and boot my own kernel
 - [x] Hand-written init + busybox shell
-- [ ] Read /proc and understand what the kernel exposes
+- [x] Read /proc and understand what the kernel exposes
 - [ ] First loadable kernel module (kernelspace!)
 - [ ] Contribute a patch to the real Linux kernel
