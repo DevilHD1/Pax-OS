@@ -36,6 +36,16 @@ You'll see the kernel boot, then:
 
 printed by my init running as the first process, followed by a busybox shell.
 
+
+## Download a prebuilt image
+
+Grab `bzImage` and `initramfs.cpio.gz` from the
+[Releases page](https://github.com/DevilHD1/Pax-OS/releases), then:
+
+    qemu-system-x86_64 -kernel bzImage -initrd initramfs.cpio.gz \
+      -append "console=ttyS0" -nographic
+
+
 ## Build init from source
 
     gcc -static -o init init/init.c
@@ -54,14 +64,6 @@ Copy `init` and busybox into the tree, make them executable, then:
 - Why init must be statically linked (hint: at boot, there are no libraries yet)
 - Syscalls: `write`, `mount`, `execve` — and why `execve` *replaces* your program
 - Reading kernel panics like error messages, not like disasters
-
-## Download a prebuilt image
-
-Grab `bzImage` and `initramfs.cpio.gz` from the
-[Releases page](https://github.com/DevilHD1/Pax-OS/releases), then:
-
-    qemu-system-x86_64 -kernel bzImage -initrd initramfs.cpio.gz \
-      -append "console=ttyS0" -nographic
 
 ## Roadmap
 
