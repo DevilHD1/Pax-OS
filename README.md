@@ -24,9 +24,7 @@ Pax OS is three pieces:
 Requirements: Linux, `qemu-system-x86_64`, a compiled kernel (`bzImage`).
 
     ./scripts/boot.sh
-
-<img width="837" height="188" alt="Screenshot From 2026-11-05 19-57-26" src="https://github.com/user-attachments/assets/898d06b4-a00d-4543-9835-4df1856f6daa" />
-
+    
 or:
 
     qemu-system-x86_64 -kernel <path-to>/bzImage \
@@ -38,6 +36,7 @@ You'll see the kernel boot, then:
 
 printed by my init running as the first process, followed by a busybox shell.
 
+<img width="837" height="188" alt="Screenshot From 2026-11-05 19-57-26" src="https://github.com/user-attachments/assets/898d06b4-a00d-4543-9835-4df1856f6daa" />
 
 ## Download a prebuilt image
 
