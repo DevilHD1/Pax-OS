@@ -1,2 +1,1 @@
-# Pax-OS
-Linux distro. Just for fun.....
+
