@@ -46,7 +46,7 @@ printed by my init running as the first process, followed by a busybox shell.
 Copy `init` and busybox into the tree, make them executable, then:
 
     cd initramfs-root
-    find .   cpio -o -H newc | gzip > ../initramfs.cpio.gz
+    find . | cpio -o -H newc | gzip > ../initramfs.cpio.gz
 
 ## What I learned building this
 
