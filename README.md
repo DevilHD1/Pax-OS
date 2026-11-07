@@ -71,5 +71,6 @@ Copy `init` and busybox into the tree, make them executable, then:
 - [x] Compile and boot my own kernel
 - [x] Hand-written init + busybox shell
 - [x] Read /proc and understand what the kernel exposes
-- [ ] First loadable kernel module (kernelspace!)
+- [x] First loadable kernel module (kernelspace!)
 - [ ] Contribute a patch to the real Linux kernel
+- [ ] Create custom /proc entry
