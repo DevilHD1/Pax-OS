@@ -5,3 +5,4 @@ initramfs.cpio.gz
 *.o
 *.mod.*
 Module.symvers
+modules.order
