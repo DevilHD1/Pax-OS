@@ -1,3 +1,7 @@
 a.out
 *.o
 initramfs.cpio.gz
+*.ko
+*.o
+*.mod.*
+Module.symvers
